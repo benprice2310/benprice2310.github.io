@@ -27,12 +27,17 @@ description: >- # this means to ignore newlines until "baseurl:"
   barrier discharge (DBD) plasma actuators through experimental work and computational
   fluid dynamics (CFD) modeling. Looking forward to learning with you!
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
 linkedin_username: price-ben
 github_username:  benprice2310
 
 # Build settings
 theme: minima
+sass:
+  sass_dir: _sass
+include: ['pages']
+kramdown:
+  input: GFM
 plugins:
   - jekyll-feed
 
